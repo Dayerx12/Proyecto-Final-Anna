@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción o Preguntas - Red Magic</title>
+    <link rel="stylesheet" href="Css/suscripcion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes somos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="suscripcion">
+        <h1>Suscripción o Preguntas</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="first-name">Nombre:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Apellido:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="phone">Número de Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="comments">Comentario:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
